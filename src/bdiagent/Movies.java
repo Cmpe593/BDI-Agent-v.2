@@ -11,5 +11,6 @@ public class Movies extends Event {
 	}
 	public void setMovieID(int value) {
 		this.movieID=value;
+		
 	}
 }
