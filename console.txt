@@ -1,14 +1,141 @@
-{
-	'change': {
-		'type': 'update-event',
-		'explanation': 'Conference talk speaker',
-		'time': 3
-	}
-}
-!!!
-{
-	'change': {
-		'type': 'drop-event',
-		'explanation': 'Concert day 5'
-	}
-}
+
+
+Agent2K wakes up at Day 15
+
+
+New Belief: "Stay in hotel" in Day 16, its period is Day and its importance is 0.04704772285328296
+New Belief: "Stay in hotel" in Day 17, its period is Day and its importance is 0.23916305167862667
+New Belief: "Stay in hotel" in Day 18, its period is Day and its importance is 0.02635381337202761
+New Belief: "Stay in hotel" in Day 19, its period is Day and its importance is 0.22338430432259745
+New Belief: "Stay in hotel" in Day 20, its period is Day and its importance is 0.15052186473545895
+New Belief: "Stay in hotel" in Day 21, its period is Day and its importance is 0.11800971629277404
+New Belief: "Stay in hotel" in Day 21, its period is Night and its importance is 0.042993824112088075
+New Belief: "Stay in hotel" in Day 20, its period is Night and its importance is 0.01762314690716752
+New Belief: "Stay in hotel" in Day 19, its period is Night and its importance is 0.048153265909459154
+New Belief: "Stay in hotel" in Day 18, its period is Night and its importance is 0.09702360444340993
+New Belief: "Stay in hotel" in Day 17, its period is Night and its importance is 0.010409500447688937
+New Belief: "Stay in hotel" in Day 16, its period is Night and its importance is 0.01854742240306281
+New Belief: "Conference talk speaker" in Day 16, its period is Day and its importance is 1.5
+New Belief: "Conference talk listener day 2" in Day 17, its period is Day and its importance is 0.9912097897717376
+New Belief: "Conference talk listener day 3" in Day 18, its period is Day and its importance is 0.860035801814612
+New Belief: "Conference talk listener day 4" in Day 19, its period is Day and its importance is 0.9601923579341228
+New Belief: "Conference talk listener day 5" in Day 20, its period is Day and its importance is 0.9600522145208752
+New Belief: "Conference talk listener day 6" in Day 21, its period is Day and its importance is 0.8682510140803935
+New Belief: "Flight to Amsterdam" in Day 15, its period is Night and its importance is 0.9176493592988552
+New Belief: "Flight to Istanbul" in Day 21, its period is Night and its importance is 0.8285439283965974
+New Belief: "Conference dinner" in Day 20, its period is Night and its importance is 0.8137718718850606
+New Belief: "Going Van Gogh Museum" in Day 16, its period is Day and its importance is 0.478424676655181
+New Belief: "Basketball game day 1" in Day 16, its period is Night and its importance is 0.3983036657994962
+New Belief: "Theatre day 1" in Day 16, its period is Night and its importance is 0.33876127036123443
+New Belief: "Museum day 2" in Day 17, its period is Day and its importance is 0.39723590934030517
+New Belief: "Meeting With Friends" in Day 17, its period is Day and its importance is 0.4155531809696817
+New Belief: "Concert day 2" in Day 17, its period is Night and its importance is 0.473831134376561
+New Belief: "Opera day 2" in Day 17, its period is Night and its importance is 0.4765513285093519
+New Belief: "Feyenoord Soccer Game" in Day 17, its period is Night and its importance is 0.44033011874489647
+New Belief: "Ajax Soccer Game" in Day 18, its period is Day and its importance is 0.32577510948378224
+New Belief: "Tennis Match" in Day 18, its period is Day and its importance is 0.3763545461090806
+New Belief: "Dinner With Friends" in Day 18, its period is Night and its importance is 0.38795142457577897
+New Belief: "Opera Day 3" in Day 18, its period is Night and its importance is 0.38888742370367346
+New Belief: "Soccer Match Day 4" in Day 19, its period is Day and its importance is 0.4790595197070941
+New Belief: "Cinema day 4" in Day 19, its period is Night and its importance is 0.3758683005714052
+New Belief: "Museum day 4" in Day 19, its period is Night and its importance is 0.38829351023618597
+New Belief: "Theatre day 5" in Day 20, its period is Day and its importance is 0.44849281028319393
+New Belief: "Concert day 5" in Day 20, its period is Night and its importance is 0.33159163852928614
+New Belief: Art is more important then Sportwith the amount 0.2
+New Belief: Stay and its period is Night should be 1 day before Talk-Speaker and is period is Day.
+
+List of 10 Desires day 15:
+"Flight to Amsterdam" in Day 15, its period is Night and its importance is 0.9176493592988552
+"Movie 17 and type: War" in Day 16, its period is Day and its importance is 0.6042879888167183
+"Movie 48 and type: Documentary" in Day 16, its period is Day and its importance is 0.42703740195716233
+"Movie 67 and type: Animation" in Day 16, its period is Day and its importance is 0.43863212884169084
+"Movie 88 and type: Sport" in Day 16, its period is Day and its importance is 0.4102507427674499
+"Movie 101 and type: Sport" in Day 16, its period is Day and its importance is 0.40626140848517656
+"Movie 102 and type: Horror" in Day 16, its period is Day and its importance is 0.4376211755174567
+"Movie 125 and type: Action" in Day 16, its period is Day and its importance is 0.5751944888090047
+"Movie 157 and type: Action" in Day 16, its period is Day and its importance is 0.4821420217977188
+"Movie 163 and type: Action" in Day 16, its period is Day and its importance is 0.4960271715767628
+.
+.
+.
+
+
+List of Intentions day 15:
+"Flight to Amsterdam" in Day 15, its period is Night and its importance is 0.9176493592988552
+"Conference talk speaker" in Day 16, its period is Day and its importance is 1.5
+"Movie 215 and type: Comedy" in Day 16, its period is Night and its importance is 0.7405100073701371
+"Conference talk listener day 2" in Day 17, its period is Day and its importance is 0.9912097897717376
+"Movie 11 and type: Comedy" in Day 17, its period is Night and its importance is 0.7129301912600106
+"Conference talk listener day 3" in Day 18, its period is Day and its importance is 0.860035801814612
+"Movie 199 and type: Comedy" in Day 18, its period is Night and its importance is 0.7213767253646134
+"Conference talk listener day 4" in Day 19, its period is Day and its importance is 0.9601923579341228
+"Movie 151 and type: Sci-Fi" in Day 19, its period is Night and its importance is 0.7527131390755607
+"Conference talk listener day 5" in Day 20, its period is Day and its importance is 0.9600522145208752
+"Conference dinner" in Day 20, its period is Night and its importance is 0.8137718718850606
+"Conference talk listener day 6" in Day 21, its period is Day and its importance is 0.8682510140803935
+"Flight to Istanbul" in Day 21, its period is Night and its importance is 0.8285439283965974
+
+
+
+Agent2K wakes up at Day 16
+
+
+New Belief: "Conference talk speaker" in Day 16, its period is Day and its importance is 1.5 and change its day to 
+New Belief: "Concert day 5" in Day 20, its period is Night and its importance is 0.33159163852928614 is removed.
+New belief: A movie is rated by an agent 10 with 1. trust degree.Its importance effect is: 79.775
+
+List of 10 Desires day 16:
+"Movie 17 and type: War" in Day 16, its period is Day and its importance is 0.6042879888167183
+"Movie 48 and type: Documentary" in Day 16, its period is Day and its importance is 0.42703740195716233
+"Movie 67 and type: Animation" in Day 16, its period is Day and its importance is 0.43863212884169084
+"Movie 88 and type: Sport" in Day 16, its period is Day and its importance is 0.4102507427674499
+"Movie 101 and type: Sport" in Day 16, its period is Day and its importance is 0.40626140848517656
+"Movie 102 and type: Horror" in Day 16, its period is Day and its importance is 0.4376211755174567
+"Movie 125 and type: Action" in Day 16, its period is Day and its importance is 0.5751944888090047
+"Movie 157 and type: Action" in Day 16, its period is Day and its importance is 0.4821420217977188
+"Movie 163 and type: Action" in Day 16, its period is Day and its importance is 0.4960271715767628
+"Movie 166 and type: Animation" in Day 16, its period is Day and its importance is 0.5290914869273313
+.
+.
+.
+
+
+List of Intentions day 16:
+"Movie 1820 and type: Comedy" in Day 16, its period is Day and its importance is 0.6643201059417925
+"Movie 215 and type: Comedy" in Day 16, its period is Night and its importance is 0.7405100073701371
+"Movie 901 and type: Sport" in Day 17, its period is Day and its importance is 80.16774626635956
+"Movie 11 and type: Comedy" in Day 17, its period is Night and its importance is 0.7129301912600106
+"Conference talk listener day 3" in Day 18, its period is Day and its importance is 0.860035801814612
+"Stay in hotel" in Day 18, its period is Night and its importance is 1.5970236044434098
+"Conference talk speaker" in Day 19, its period is Day and its importance is 1.5
+"Movie 151 and type: Sci-Fi" in Day 19, its period is Night and its importance is 0.7527131390755607
+"Conference talk listener day 5" in Day 20, its period is Day and its importance is 0.9600522145208752
+"Conference dinner" in Day 20, its period is Night and its importance is 0.8137718718850606
+"Conference talk listener day 6" in Day 21, its period is Day and its importance is 0.8682510140803935
+"Flight to Istanbul" in Day 21, its period is Night and its importance is 0.8285439283965974
+
+
+
+Agent2K wakes up at Day 17
+
+
+
+
+Agent2K wakes up at Day 18
+
+
+
+
+Agent2K wakes up at Day 19
+
+
+
+
+Agent2K wakes up at Day 20
+
+
+
+
+Agent2K wakes up at Day 21
+
+

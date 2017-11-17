@@ -10,9 +10,12 @@ public class Event {
 	int month;
 	String type;
 	String eventType;
-	private double totalimportance;
-	private double baseimportance;
-	private double additionalimportance;
+	protected double totalimportance;
+	protected double baseimportance;
+	protected double additionalimportance;
+	protected double totalAdditionalimportance;
+	protected int additionalCounter;
+	protected int lockAdditionalDegree;
 	String explanation;
 	String period;
 	JSONObject event;
@@ -71,6 +74,13 @@ public class Event {
 		this.additionalimportance=d;
 		this.totalimportance=d+this.baseimportance;
 	}
+	public void addAdditional(double d) {
+		this.totalAdditionalimportance+=d;
+		this.additionalCounter++;
+	}
+	public void calculateMovieFinalAdditionalImportance() {
+		
+	}
 	public void setBase(double d) {
 		this.baseimportance=d;
 		this.totalimportance=this.additionalimportance+d;
@@ -84,10 +94,22 @@ public class Event {
 	public double getBase() {
 		return this.baseimportance;
 	}
-	
+	public int getMovieID() {
+		return -1;
+	}
+	public void lockAdditional(int degree) {
+		this.lockAdditionalDegree=degree;
+	}
+	public int getLockDegree() {
+		return this.lockAdditionalDegree;
+	}
+	public String toTrustString() {
+		return "";
+	}
 	@Override
 	public String toString(){
-		return "New Belief: "+"\""+explanation+"\" in Day "+day+ ", its period is "+period+" and its importance is " + (baseimportance+additionalimportance)  ;
+		return "New Belief: "+"\""+explanation+"\" in Day "+day+ ", its period is "+period+" and its importance is " + (baseimportance+additionalimportance);
+		//return "New Belief: "+"\""+explanation+"\" in Day "+day+ ", its period is "+period+" and its importance is " + (baseimportance+additionalimportance) +"-"+baseimportance+"-"+additionalimportance ;
 	}
 	public String eventInfo(){
 		return "\""+explanation+"\" in Day "+day+ ", its period is "+period+" and its importance is " + (baseimportance+additionalimportance)  ;

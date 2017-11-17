@@ -25,6 +25,6 @@ public class Comparison {
 		}
 	}
 	public String toString() {
-		return "New Belief: "+first+" is more important then "+second+ "with the amount "+amount;
+		return "New Belief: "+first+" is more important then "+second+ " with the amount "+amount;
 	}
 }
