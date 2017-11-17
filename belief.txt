@@ -23,7 +23,7 @@
 }
 !!!
 {
-	'event-schedule':{
+	'event-schedule':{ 
 		'where': 'Amsterdam',
 		'day': 18,
 		'month': 7,

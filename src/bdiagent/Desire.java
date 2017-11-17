@@ -20,4 +20,17 @@ public class Desire {
 		}
 		return s;
 	}
+	public String toStringTenDesire() {
+		String s="";
+		s=s+"List of 10 Desires day " + day+ ":\n";
+		int size=10;
+		if(events.size()<10) {
+			size=events.size();
+		}
+		for(int i =0;i<size;i++) {
+			s=s+events.get(i).eventInfo()+"\n";
+		}
+		s+=".\n.\n.\n";
+		return s;
+	}
 }

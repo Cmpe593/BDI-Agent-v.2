@@ -5,10 +5,10 @@ import java.util.Random;
 public class Movies extends Event {
 	 int movieID;
 	 String Type;
-	 String filmTypes ;
+	 String filmTypes;
+	 int filmtypeID;
 	public Movies(int id) {
 		Random random = new Random();
-		
 		this.movieID=id;
 		this.where = "Amsterdam";
 		this.day = random.nextInt(6)+16;
@@ -21,18 +21,25 @@ public class Movies extends Event {
 		}else{
 			this.period = "Night";
 		}
-		this.filmTypes = typeMaker(random.nextInt(10));
-		this.explanation = "Movie "+movieID+" and type: "+ filmTypes ; 
+		this.filmtypeID=random.nextInt(10);
+		this.filmTypes = typeMaker(this.filmtypeID);
+		this.explanation = "Movie "+movieID+" and type: "+ filmTypes ;
+		this.additionalimportance=0;
+		this.baseimportance=0;
+		this.totalimportance=baseimportance+additionalimportance;
+		this.lockAdditionalDegree=0;
+		this.totalAdditionalimportance=0;
+		this.additionalCounter=0;
 		
 	}
 	private static String typeMaker (int key) {
 		switch (key) {
 		
 		case 0:
-			return "Horror" ;
+			return "Comedy" ;
 			
 		case 1:
-			return "Comedy" ;
+			return "Sci-Fi" ;
 				
 		case 2:
 			return "Action" ;
@@ -50,7 +57,7 @@ public class Movies extends Event {
 			return "Adventure" ;
 			
 		case 7:
-			return "Sci-Fi" ;
+			return "Horror" ;
 			
 		case 8:
 			return "Animation" ;
@@ -74,5 +81,25 @@ public class Movies extends Event {
 		this.movieID=value;
 		
 	}
+	public void calculateMovieFinalAdditionalImportance() {
+		if(this.additionalCounter>0)
+			setAdditional((this.totalAdditionalimportance/this.additionalCounter)+(5-this.filmtypeID)*0.03);
+		else
+			setAdditional((5-this.filmtypeID)*0.02);
+	}
+	//This sysout show that total notes for a movie by truster, # of truster and trust degree
+	public String toTrustString() {
+		String s ="Trust degree for movie "+this.getMovieID()+": "+this.getLockDegree();
+		if(this.getLockDegree()==0) {
+			s+=" so we cannot get feedback from our friends.";
+		}
+		else {
+			s+=" importance effect for this feedback: "+(this.totalAdditionalimportance/this.additionalCounter);
+			s+=" we ask "+this.additionalCounter+" different agent.";
+		}
+		return s;
+	}
+
+	
 	
 }
